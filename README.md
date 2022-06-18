@@ -11,22 +11,21 @@ End-to-End · Machine Learning · Reverse Image Search
        <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App">
   </a>
   &nbsp;
-  <img src="https://img.shields.io/github/pipenv/locked/python-version/lkarjun/heartdisease-prediction?style=flat&color=3c6e71">
+  <img src="https://img.shields.io/github/pipenv/locked/python-version/lkarjun/outfits-search?style=flat&color=3c6e71">
  &nbsp;
- <img src="https://img.shields.io/github/last-commit/lkarjun/heartdisease-prediction?color=ffffff">
+ <img src="https://img.shields.io/github/last-commit/lkarjun/outfits-search?color=ffffff">
  &nbsp;
 </div>
 
 
 <div align="center">
-  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/heartdisease-prediction/mlflow?color=f0ead2">
+  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/outfits-search/fastai?color=f0ead2">
  &nbsp;
-  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/heartdisease-prediction/dvc?color=dde5b6">
+  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/outfits-search/scikit-learn?color=a98467">
   &nbsp;
-  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/heartdisease-prediction/streamlit?color=adc178">
+  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/outfits-search/streamlit?color=adc178">
  &nbsp;
-  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/heartdisease-prediction/scikit-learn?color=a98467">
-
+  <img src="https://img.shields.io/github/pipenv/locked/dependency-version/lkarjun/outfits-search/dvc?color=dde5b6">
 </div>
 
 ---
