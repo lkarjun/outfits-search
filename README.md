@@ -32,5 +32,5 @@ End-to-End · Machine Learning · Reverse Image Search
 ---
 
 <div align='center'>
-   <img src="https://user-images.githubusercontent.com/58617251/174445986-ed646cbc-5f2c-4f82-815c-00b968b0a3f7.gif" alt="Recorder" width = 800 height = 450>
+   <img src="https://user-images.githubusercontent.com/58617251/174445986-ed646cbc-5f2c-4f82-815c-00b968b0a3f7.gif" alt="Recorder">
 </div>
