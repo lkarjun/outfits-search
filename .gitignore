@@ -1,3 +1,5 @@
 *.zip
 Dataset/
 Model/old/
+test.ipynb
+secrets.toml
