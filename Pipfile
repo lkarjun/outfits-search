@@ -5,9 +5,9 @@ name = "pypi"
 
 [packages]
 streamlit = "*"
-scikit-learn = "*"
 dvc = {extras = ["azure"], version = "*"}
 fastai = "*"
+scikit-learn = "==1.0.2"
 
 [dev-packages]
 ipykernel = "*"
