@@ -1,0 +1,4 @@
+[core]
+    remote = dataset
+['remote "dataset"']
+    url = azure://dvcazurecontainer/RImgSearch/Dataset
