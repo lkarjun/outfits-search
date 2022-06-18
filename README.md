@@ -30,13 +30,13 @@ End-to-End · Machine Learning · Reverse Image Search
 
 <div align = 'center'>
    <a href="https://www.kaggle.com/datasets/kritanjalijain/outfititems">
-      <img src='https://img.shields.io/badge/Kaggle📂-Outfititems-brightgreen?style=flat&color=FF7396'>
+      <img src='https://img.shields.io/badge/Kaggle📂-Outfititems-brightgreen?style=for-the-badge&color=FF7396'>
    </a>
   <a href="https://github.com/lkarjun/outfits-search/blob/main/Notebooks/Reverse_Image_Search.ipynb">
-      <img src='https://img.shields.io/badge/Notebook📒-Reverse%20Image%20Search-brightgreen?style=flat&color=F4E06D'>
+      <img src='https://img.shields.io/badge/Notebook📒-Reverse%20Image%20Search-brightgreen?style=for-the-badge&color=F4E06D'>
   </a>
   <a href="https://github.com/lkarjun/outfits-search/blob/main/Notebooks/Similar_Product_Search.ipynb">
-      <img src='https://img.shields.io/badge/Notebook📒-Outfits%20Search-brightgreen?style=flat&color=C499BA'>
+      <img src='https://img.shields.io/badge/Notebook📒-Outfits%20Search-brightgreen?style=for-the-badge&color=C499BA'>
   </a>
 </div>
 
