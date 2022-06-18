@@ -1,13 +1,13 @@
 
 <div align="center">
-<h1>🛒&nbsp;<a href="https://share.streamlit.io/lkarjun/outfits-search/app.py">Outfits Search Application</a></h1>
+<h1>🛒&nbsp;Outfits Search Application</h1>
 End-to-End · Machine Learning · Reverse Image Search
 </div>
 
 <br>
 
 <div align="center">
-  <a href="https://share.streamlit.io/lkarjun/heartdisease-prediction/app.py">
+  <a href="https://share.streamlit.io/lkarjun/outfits-search/main/app.py">
        <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App">
   </a>
   &nbsp;
