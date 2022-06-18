@@ -1,5 +1,5 @@
 import streamlit as st
-from app_helper import *
+from app_helper import get_result, Image
 from pathlib import Path
 import os
 
