@@ -1,4 +1,3 @@
-from turtle import distance
 from fastai.vision.all import *
 from pathlib import Path
 import pathlib
