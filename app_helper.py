@@ -43,7 +43,6 @@ def get_feature_vector(learn, X = None, dl = None, batch = False):
       y = learn.predict(X)
   return h.stored
 
-
 def get_result(x):
     learn = load_learner(Model_path)
     feature_vector = get_feature_vector(learn, tensor(x)).numpy()
