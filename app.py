@@ -8,7 +8,7 @@ os.environ["AZURE_STORAGE_ACCOUNT"] = st.secrets["AZURE_STORAGE_ACCOUNT"]
 os.environ["AZURE_STORAGE_KEY"] = st.secrets["AZURE_STORAGE_KEY"]
 
 SAMPLE_IMG = Path("SampleImages")
-SAMPLE_FILES = range(1, 6)
+SAMPLE_FILES = range(1, 8)
 
 st.set_page_config(page_title="Outfits Search 🛍️👗👠", page_icon="🛒",
                     menu_items={'About': "**Outfits Search🛍️👗👠** Prediction App"})
