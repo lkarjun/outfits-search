@@ -3,3 +3,4 @@ Dataset/
 Model/old/
 test.ipynb
 secrets.toml
+__pycache__
