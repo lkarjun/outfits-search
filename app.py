@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from app_helper import *
 from pathlib import Path
 import os
@@ -6,20 +7,13 @@ import os
 os.environ["AZURE_STORAGE_ACCOUNT"] = st.secrets["AZURE_STORAGE_ACCOUNT"]
 os.environ["AZURE_STORAGE_KEY"] = st.secrets["AZURE_STORAGE_KEY"]
 
+SAMPLE_IMG = Path("SampleImages")
+SAMPLE_FILES = range(1, 8)
 
-DATASET_FOLDER = Path("Dataset")
-SAMPLE_IMG = DATASET_FOLDER/'upperwear/jacket/upperwear_jacket6771.png'
-
-if not DATASET_FOLDER.exists():
-    os.system('dvc pull Dataset.dvc')
-
-st.set_page_config(page_title="Outfits Search 🛍️👗👠", page_icon="🛒", 
+st.set_page_config(page_title="Outfits Search 🛍️👗👠", page_icon="🛒",
                     menu_items={'About': "**Outfits Search🛍️👗👠** Prediction App"})
 
-
 st.markdown(f"<h1 style='text-align: Center;'>Outfits Search🛍️👗👠</h1><br>", True)
-
-
 
 file = st.file_uploader("Search Image", type=["png", "jpg", "jpeg"])
 st.markdown("<br>", True)
@@ -30,13 +24,14 @@ with col2:
         img = Image.open(file)
         st.image(img)
     else:
-        img = Image.open(SAMPLE_IMG)
-        st.image(img, caption="Jacket")
+        img = Image.open(SAMPLE_IMG/f'{random.choice(SAMPLE_FILES)}.jpg')
+        st.image(img, caption="Sample")
 
 
 st.write()
 
 with st.spinner("Loading Results..."):
-    st.markdown(f"<br><h3 style='text-align: left;'>Similar Products 🛍️</h3><br>", True)
-    images = get_result(img)
-    st.image(images, width=110)
+    st.markdown(f"<br><h3 style='text-align: left;'>Buy Similar Products 🛍️</h3><br>", True)
+    rslt_idx = get_result(img)
+    rslt = result_html(rslt_idx)
+    components.html(rslt, height=8000)
