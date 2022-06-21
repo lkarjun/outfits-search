@@ -8,6 +8,7 @@ streamlit = "*"
 dvc = {extras = ["azure"], version = "*"}
 fastai = "*"
 scikit-learn = "==1.0.2"
+jinja2 = "*"
 
 [dev-packages]
 ipykernel = "*"
