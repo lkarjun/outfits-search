@@ -47,7 +47,7 @@ def get_result(x):
     learn = load_learner(Model_path)
     feature_vector = get_feature_vector(learn, tensor(x)).numpy()
     distances, idx = neighbor.kneighbors(feature_vector)
-    return idx
+    return idx[distances < .05]
 
 
 
@@ -56,6 +56,7 @@ def result_html(idx):
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+        {% if files_in %}
         <div class="row p-3 text-center">
         {% for i in df.iterrows() %}
 
@@ -81,10 +82,14 @@ def result_html(idx):
 
         {% endfor %}
         </div>
+        {% else %}
+        <br><h5 style='text-align: center;'>** Sorry Not Found Any Outfits🙇 **</h5><br>
+        {% endif %}
 
         <hr>
   """
 
-  rslt = df.iloc[idx[0]]
+  rslt = df.iloc[idx]
+  files_in = True if len(rslt) >= 1 else False
 
-  return template.from_string(html).render(df=rslt)
+  return template.from_string(html).render(df=rslt, files_in = files_in)
