@@ -47,7 +47,7 @@ def get_result(x):
     learn = load_learner(Model_path)
     feature_vector = get_feature_vector(learn, tensor(x)).numpy()
     distances, idx = neighbor.kneighbors(feature_vector)
-    return idx[distances < .05]
+    return idx[distances <= .08]
 
 
 
@@ -83,7 +83,7 @@ def result_html(idx):
         {% endfor %}
         </div>
         {% else %}
-        <br><h5 style='text-align: center;'>** Sorry Not Found Any Outfits🙇 **</h5><br>
+        <br><h5 style='text-align: center;'>** Sorry No Matching Outfits🙇 **</h5><br>
         {% endif %}
 
         <hr>
